@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled, { css } from "styled-components";
 import { ArrowLeft, Home, Search, Notifications, Email } from "../../styles/icons";
 
 export const Container = styled.div`
@@ -59,8 +59,34 @@ export const ProfileInfo = styled.div`
    }
 `;
 
-export const BottomMenu = styled.div``;
-export const HomeIcon = styled(Home)``;
-export const SearchIcon = styled(Search)``;
-export const BellIcon = styled(Notifications)``;
-export const EmailIcon = styled(Email)``;
+export const BottomMenu = styled.div`
+   /* position: fixed;
+   bottom: 0; */
+`;
+
+const iconCSS = css`
+   width: 31px;
+   height: 31px;
+
+   cursor: pointer;
+
+   fill: var(--gray);
+
+   &:hover,
+   &:active {
+      fill: var(--twitter);
+   }
+`;
+
+export const HomeIcon = styled(Home)`
+   ${iconCSS}
+`;
+export const SearchIcon = styled(Search)`
+   ${iconCSS}
+`;
+export const BellIcon = styled(Notifications)`
+   ${iconCSS}
+`;
+export const EmailIcon = styled(Email)`
+   ${iconCSS}
+`;
