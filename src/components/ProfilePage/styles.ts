@@ -1,6 +1,7 @@
 import styled, { css } from "styled-components";
 
 import { LocationOn, Cake } from "../../styles/icons";
+import Button from "../Button";
 
 import person1 from "../../images/person1.jpg";
 
@@ -25,8 +26,10 @@ export const Avatar = styled.div`
    width: max(45px, min(135px, 22vw));
    height: max(45px, min(135px, 22vw));
    border: 3.75px solid var(--primary);
-   background: var(--gray);
+   background-color: var(--gray);
    background-image: url(${person1});
+   background-size: cover;
+   background-position: center center;
    border-radius: 50%;
    position: absolute;
    bottom: max(-60px, -10vw);
@@ -94,5 +97,19 @@ export const Followage = styled.div`
       & + span {
          margin-left: 20px;
       }
+   }
+`;
+
+export const EditButton = styled(Button)`
+   position: absolute;
+   top: 2vw;
+   right: 7px;
+   padding: 4px 16px;
+   font-size: 13px;
+
+   @media (min-width: 320px) {
+      top: 10px;
+      padding: 10px 19px;
+      font-size: 15px;
    }
 `;
