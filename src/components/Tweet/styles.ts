@@ -1,6 +1,7 @@
 import styled, { css } from "styled-components";
 import { Chat, Rocketseat, Favorite } from "../../styles/icons";
 import person2 from "../../images/person2.jpg";
+import pic3 from "../../images/pic3.jpg";
 
 export const Container = styled.div`
    display: flex;
@@ -93,7 +94,9 @@ export const ImageContent = styled.div`
    margin-top: 12px;
    width: 100%;
    height: min(285px, max(175px, 41vw));
-   background: var(--outline);
+   background-color: var(--outline);
+   background-image: url(${pic3});
+   background-size: cover;
    border-radius: 14px;
    cursor: pointer;
    &:hover {
