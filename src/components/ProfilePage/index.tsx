@@ -22,8 +22,8 @@ const ProfilePage: React.FC = (): JSX.Element => {
          <ProfileData>
             <EditButton>Edit Profile</EditButton>
 
-            <h1>Jane Doe</h1>
-            <h2>@janedoe</h2>
+            <h1>John Doe</h1>
+            <h2>@johndoe</h2>
             <p>
                Developer at <a href="http://google.com">Google</a>
             </p>
