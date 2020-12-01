@@ -1,5 +1,5 @@
 import styled, { css } from "styled-components";
-import { Chat, Rocketseat, Favorite } from "../../styles/icons";
+import { Chat, Twitter, Favorite } from "../../styles/icons";
 import person2 from "../../images/person2.jpg";
 import pic3 from "../../images/pic3.jpg";
 
@@ -17,7 +17,7 @@ export const Retweeted = styled.div`
    font-size: 13px;
 `;
 
-export const RocketseatIcon = styled(Rocketseat)`
+export const Logo = styled(Twitter)`
    width: 16px;
    height: 16px;
    margin-left: 35px;
@@ -165,7 +165,7 @@ export const CommentIcon = styled(Chat)`
    ${iconCSS}
 `;
 
-export const RetweetIcon = styled(Rocketseat)`
+export const RetweetIcon = styled(Twitter)`
    ${iconCSS}
 `;
 

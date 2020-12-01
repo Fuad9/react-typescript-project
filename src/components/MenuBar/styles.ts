@@ -8,8 +8,9 @@ import {
    FavoriteBorder,
    Person,
    ExitToApp,
-   Rocketseat,
 } from "../../styles/icons";
+
+import { Twitter } from "@styled-icons/boxicons-logos/Twitter";
 
 export const Container = styled.div`
    display: none;
@@ -37,7 +38,7 @@ export const Topside = styled.div`
    }
 `;
 
-export const Logo = styled(Rocketseat)`
+export const Logo = styled(Twitter)`
    width: 41px;
    height: 41px;
 

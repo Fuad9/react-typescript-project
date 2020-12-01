@@ -3,7 +3,7 @@ import React from "react";
 import {
    Container,
    Retweeted,
-   RocketseatIcon,
+   Logo,
    Body,
    Avatar,
    Content,
@@ -22,7 +22,7 @@ const Tweet: React.FC = () => {
    return (
       <Container>
          <Retweeted>
-            <RocketseatIcon />
+            <Logo />
             you retweeted
          </Retweeted>
 
