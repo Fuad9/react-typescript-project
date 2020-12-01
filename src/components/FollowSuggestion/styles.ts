@@ -1,5 +1,6 @@
 import styled from "styled-components";
 import person3 from "../../images/person3.jpg";
+import Button from "../Button";
 
 export const Container = styled.div`
    display: flex;
@@ -22,6 +23,20 @@ export const Avatar = styled.div`
    margin-right: 10px;
 `;
 
-export const Info = styled.div``;
+export const Info = styled.div`
+   display: flex;
+   flex-direction: column;
 
-export const FollowButton = styled.div``;
+   > strong {
+      font-size: 14px;
+   }
+
+   > span {
+      font-size: 14px;
+      color: var(--gray);
+   }
+`;
+
+export const FollowButton = styled(Button)`
+   padding: 6px 17px;
+`;
